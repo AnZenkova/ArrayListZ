@@ -31,7 +31,6 @@ public class Main {
         System.out.println(arrayListService.isEmpty());
         arrayListService.clear();
 
-        System.out.println(Arrays.toString(arrayListService.toArray()));
         String[] array = arrayListService.toArray();
 
     }
