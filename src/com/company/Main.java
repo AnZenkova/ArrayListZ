@@ -1,12 +1,10 @@
 package com.company;
 
-import java.util.Arrays;
-
 public class Main {
 
     public static void main(String[] args) {
 
-        ArrayListService arrayListService = new ArrayListServiceImpl();
+        StringListService arrayListService = new StringListServiceImpl();
 
         System.out.println(arrayListService.add("Привет"));
         System.out.println(arrayListService.add(3,"У меня всё хорошо"));
@@ -21,9 +19,9 @@ public class Main {
         System.out.println(arrayListService.lastIndexOf("Привет"));
         System.out.println(arrayListService.get(0));
 
-        String[] strings = {"h", "p", "s"};
+        StringList string1 = new StringList(8);
 
-        System.out.println(arrayListService.equals(strings));
+        System.out.println(arrayListService.equals(string1));
         System.out.println(arrayListService.size());
 
         System.out.println(arrayListService.remove(0));

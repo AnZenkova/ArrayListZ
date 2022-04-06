@@ -1,6 +1,6 @@
 package com.company;
 
-public interface ArrayListService {
+public interface StringListService {
 
     String add(String item);
     String add(int index, String item);
@@ -11,7 +11,7 @@ public interface ArrayListService {
     int indexOf(String item);
     int lastIndexOf(String item);
     String get(int index);
-    boolean equals(Object otherList);
+    boolean equals(StringList otherList);
     int size();
     boolean isEmpty();
     void clear();
